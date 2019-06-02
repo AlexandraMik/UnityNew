@@ -18,10 +18,4 @@ public class UsingInstantiate : MonoBehaviour
             rocketInstance.AddForce(barrelEnd.forward * 10);
         } 
     }
-    void OnCollisionEnter(Collision myCollision) {
-      if(myCollision.gameObject.CompareTag("Destroy")){
-         Destroy (TheGameObject);//уничтожает обьект при косании с любой поверхностью
-      }
-  
-}
 }
